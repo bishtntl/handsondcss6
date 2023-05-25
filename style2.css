@@ -1,0 +1,173 @@
+*{
+    margin: 0;
+    padding: 0;
+} 
+body{
+    width: 1500px;
+    border: 10px solid;
+    border-right-color: green; 
+    border-left-color: orange; 
+    border-top:0px;
+    border-bottom:0px;
+
+}
+
+ #happy{
+    background-color: orange;
+    font-family: serif;
+}
+#ind{
+    background-color: aliceblue;
+}
+#day{
+    background-color: green;
+}
+h1{
+    text-align: center;
+}
+.cloud{
+    height: 100vh;
+    width: 100%;
+    background-image: url(./sky.jpg);
+    overflow-x: hidden; 
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative; 
+}
+.road{
+    height: 200px;
+    width: 500%;
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-image: url(./road.jpg);
+    background-repeat:repeat-x;  
+    z-index: 1; 
+    animation: road 5s linear infinite;
+}
+@keyframes road {
+    100%{
+          transform:translateX(-3000px) 
+    }
+    
+}
+ .city{
+    
+    height: 400px;
+    width: 200%;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 50px;
+    display: block;
+    background-image: url(./city.png);
+    background-repeat: repeat-x;
+    /* background-size: contain; */
+    animation: city 8s linear infinite;
+     z-index: 1; 
+    
+} 
+@keyframes city {
+    100%{
+        transform: translateX(-500px);
+    }
+    
+}
+.car{
+    height: 100px;
+    width: 700px;
+    position: absolute;
+    bottom: 200px;
+    left:400px;
+    z-index:2;
+    animation: car 1s linear infinite;
+}
+.car img{
+    width: 100%;
+}
+@keyframes car {
+    0%{
+        transform: translateY(-1px);
+    }
+    50%{
+        transform: translateY(1px);
+    }
+    100%{
+        transform: translateY(-1px);
+    }
+}
+
+ .wheel{
+     left: 50%;
+    height: 50px; 
+    width: 50px;
+    position: absolute;
+    transform: translateX(-50px);
+    bottom: 90px;
+    left: 950px;
+    z-index:2;
+   
+    
+}
+.wheel img{
+    height: 100px;
+    width: 100px;
+    animation: wheel 5s linear infinite;
+}
+.wheel2{
+    left: 50%;
+    height: 50px;
+    width: 50px;
+    position: absolute;
+    transform: translateX(-50px);
+    bottom: 90px;
+    left: 530px;
+    z-index:2;
+    
+}
+
+.wheel2 img{
+    height: 100px;
+    width: 100px;
+    animation: wheel2 5s linear infinite;
+
+}
+@keyframes wheel {
+    100%{
+        transform: rotate(360deg);
+    }
+    
+}
+@keyframes wheel2 {
+    
+    100%{
+        transform: rotate(360deg);
+    }
+}
+.flag{
+    position: absolute;
+    left: 60%;
+    bottom: 180px;
+}
+.sun{
+    position: absolute;
+    right: 0;
+    animation: sun 15s linear infinite;
+
+}
+@keyframes sun {
+    0%{
+        top: 0;
+        right: 0;
+
+    }
+    100%{
+        top: 0;
+        right: 200px;
+    }
+    
+}
+
+
